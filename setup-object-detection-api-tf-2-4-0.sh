@@ -38,7 +38,18 @@ cd ~/TensorFlow/models/research
 cp object_detection/packages/tf2/setup.py .
 python3 -m pip install .
 
-
 # Test your Installation
 # From within TensorFlow/models/research/
 python3 object_detection/builders/model_builder_tf2_test.py
+
+cd ~/TensorFlow
+
+# Making some working directory
+mkdir workspace
+mkdir workspace/local
+mkdir workspace/local/annotations
+mkdir workspace/local/exported-models
+mkdir workspace/local/images
+mkdir workspace/local/pre-trained-models
+mkdir workspace/local/model-checkpoints
+mkdir workspace/local/pre-trained-raw
