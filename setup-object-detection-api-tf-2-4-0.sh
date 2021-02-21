@@ -15,6 +15,7 @@ pip install wheel
 cd ~/TensorFlow
 git clone https://github.com/tensorflow/models.git
 cd ~/TensorFlow/models/research
+git checkout f8b0f1dd2d1a53bf1b4e06e3d38cb0d91419b984
 # Protobuf Installation/Compilation
 #wget https://github.com/protocolbuffers/protobuf/releases/download/v3.12.3/protoc-3.12.3-linux-x86_64.zip
 #unzip protoc-3.12.3-linux-x86_64.zip -d ~/protoc
@@ -25,7 +26,6 @@ cd ~/TensorFlow/models
 pip install cython numpy matplotlib cmake
 
 git clone https://github.com/cocodataset/cocoapi.git
-git checkout f8b0f1dd2d1a53bf1b4e06e3d38cb0d91419b984
 cd cocoapi/PythonAPI
 make
 cp -r pycocotools ~/TensorFlow/models/research/
