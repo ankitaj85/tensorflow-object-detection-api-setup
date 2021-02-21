@@ -25,6 +25,7 @@ cd ~/TensorFlow/models
 pip install cython numpy matplotlib cmake
 
 git clone https://github.com/cocodataset/cocoapi.git
+git checkout f8b0f1dd2d1a53bf1b4e06e3d38cb0d91419b984
 cd cocoapi/PythonAPI
 make
 cp -r pycocotools ~/TensorFlow/models/research/
